@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>グラレコ用お絵かきソフト</title>
+        <link href="design.css" rel="stylesheet" type="text/css"> 
+    </head>
+    <body>
+        <h1>ぐられこ！('ω')</h1>
+        <div id="canvas_area">
+            <canvas id="canvas" width="800px" height="480px">残念ながらHTML5に対応していません</canvas>
+        </div>
+        
+        <div id="pen_area">
+            <p>もじぺん</p>
+            <ul>
+                <li style="background-color:#ea68a2; --pen-size:2"></li>
+                <li style="background-color:#00ffff; --pen-size:10"></li>
+            </ul>
+            <p>まーかー</p>
+            <ul>
+                <li style="background-color:#00ffff"></li>
+                <li style="background-color:#b5b5b5"></li>
+            </ul>
+            <p>おりじなるぺん</p>
+            <ul>
+                <li style="background-color:#c9c9c9"></li>
+                <div id="penctrl">
+                        <p>線の太さ<input type="range" min="1" max="100" value="10" id="lineWidth"><span id="lineNum">10</span></p>
+                        <p>透 明 度<input type="range" min="1" max="100" value="100" id="alpha"><span id="alphaNum">100</span></p>
+                </div>
+            </ul>
+            <p>けしごむ</p>
+            <ul>
+                <li style="background-color:#dcdcdc"></li>
+                <li style="background-color:#ffffff"></li>
+                <li style="background-color:#ff0000"></li>
+            </ul>
+            <ul>
+                <li style="background-color:#ffff00"></li>
+                <li style="background-color:#00ff00"></li>
+                <li style="background-color:#00ffff"></li>
+                <li style="background-color:#0000ff"></li>
+                <li style="background-color:#ff00ff"></li>
+                <li style="background-color:#e60012"></li>
+                <li style="background-color:#fff100"></li>
+                <li style="background-color:#00b7ee"></li>
+                <li style="background-color:#448aca"></li>
+                <li style="background-color:#556fb5"></li>
+                <li style="background-color:#5f52a0"></li>
+                <li style="background-color:#8957a1"></li>
+                <li style="background-color:#ae5da1"></li>
+                <li style="background-color:#ea68a2"></li>
+                <li style="background-color:#eb6877"></li>
+                <li style="background-color:#e60012"></li>
+            </ul>
+        </div>
+
+
+        <div id="ctrl_area">
+                <div id="item2">
+                    <button style="margin-bottom:10px;" id="undo">戻す</button>
+                    <button style="width:100px;" id="clear">消去</button>
+                    <button style="width:100px;" onclick="save()">保存</button>
+                </div>
+            </div>
+        <script src="lib\jquery-3.3.1.js"></script>
+        <script src="canvas.js"></script>
+    </body>
+</html>
+
+
